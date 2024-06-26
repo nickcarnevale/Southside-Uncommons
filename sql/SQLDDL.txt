@@ -1,0 +1,204 @@
+-- Nicholas Carnevale
+-- CSE241
+-- Final Project SQL DDL
+
+-- Drop Junction Tables
+
+DROP TABLE ChargeableAmenityLease;
+DROP TABLE ChargeableAmenityApartment;
+DROP TABLE PrivateAmenityApartment;
+DROP TABLE CommonAmenityProperty;
+DROP TABLE Visit;
+DROP TABLE Payment;
+DROP TABLE Pet;
+DROP TABLE Dependant;
+DROP TABLE ProspectiveTenant;
+DROP TABLE ChargeableAmenity;
+DROP TABLE CommonAmenity;
+DROP TABLE PrivateAmenity;
+DROP TABLE Tenant; -- Will need to use functions below to drop tables
+DROP TABLE Lease; -- Will need to use functions below to drop tables
+DROP TABLE Apartment;
+DROP TABLE Property;
+DROP TABLE Person;
+
+-- if errors with constraints
+-- ALTER TABLE Tenant DROP CONSTRAINT SYS_C00646412;
+-- SELECT constraint_name, table_name
+-- FROM user_constraints
+-- WHERE table_name = 'LEASE';
+
+
+-- Create Person Table
+
+CREATE TABLE Person (
+    PersonID INT PRIMARY KEY,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    PhoneNumber VARCHAR(15),
+    Email VARCHAR(100),
+    DateOfBirth DATE
+);
+
+-- Create Property Table
+
+CREATE TABLE Property (
+    PropertyID INT PRIMARY KEY,
+    StreetAddress VARCHAR(255),
+    Town VARCHAR(50),
+    State VARCHAR(2),
+    ZipCode VARCHAR(10),
+    TotalUnits INT
+);
+
+-- Create Apartment Table
+
+CREATE TABLE Apartment (
+    ApartmentID INT PRIMARY KEY,
+    PropertyID INT,
+    ApartmentNumber INT,
+    Bedrooms INT,
+    Bathrooms DECIMAL(3, 1),
+    ApartmentSize INT,
+    MonthlyRent DECIMAL(10, 2),
+    FOREIGN KEY (PropertyID) REFERENCES Property (PropertyID)
+);
+
+
+-- Create Chargeable Amenities Table
+
+CREATE TABLE ChargeableAmenity (
+    ChargeableAmenityID INT PRIMARY KEY,
+    Name VARCHAR(255),
+    Description VARCHAR(1000)  
+    MonthlyCost DECIMAL(10, 2),
+);
+
+-- Create Common Amenities Table
+
+CREATE TABLE CommonAmenity (
+    CommonAmenityID INT PRIMARY KEY,
+    Name VARCHAR(255),
+    Description VARCHAR(1000) 
+);
+
+-- Create Private Amenities Table
+
+CREATE TABLE PrivateAmenity (
+    PrivateAmenityID INT PRIMARY KEY,
+    Name VARCHAR(255),
+    Description VARCHAR(1000) 
+);
+
+-- Create junction table between ChargeableAmenity and Apartment
+
+CREATE TABLE ChargeableAmenityApartment (
+    ApartmentID INT,
+    ChargeableAmenityID INT,
+    PRIMARY KEY (ApartmentID, ChargeableAmenityID),
+    FOREIGN KEY (ApartmentID) REFERENCES Apartment(ApartmentID),
+    FOREIGN KEY (ChargeableAmenityID) REFERENCES ChargeableAmenity(ChargeableAmenityID)
+);
+
+-- Create junction table between PrivateAmenity and Apartment
+
+CREATE TABLE PrivateAmenityApartment (
+    ApartmentID INT,
+    PrivateAmenityID INT,
+    PRIMARY KEY (ApartmentID, PrivateAmenityID),
+    FOREIGN KEY (ApartmentID) REFERENCES Apartment(ApartmentID),
+    FOREIGN KEY (PrivateAmenityID) REFERENCES PrivateAmenity(PrivateAmenityID)
+);
+
+-- Create junction table between CommonAmenity and Property
+
+CREATE TABLE CommonAmenityProperty (
+    PropertyID INT,
+    CommonAmenityID INT,
+    PRIMARY KEY (PropertyID, CommonAmenityID),
+    FOREIGN KEY (PropertyID) REFERENCES Property(PropertyID),
+    FOREIGN KEY (CommonAmenityID) REFERENCES CommonAmenity(CommonAmenityID)
+);
+
+-- Create Tenant Table
+
+CREATE TABLE Tenant (
+    TenantID INT PRIMARY KEY,
+    PersonID INT,
+    LeaseID INT,
+    FOREIGN KEY (PersonID) REFERENCES Person(PersonID)
+);
+
+-- Create Lease Table
+
+CREATE TABLE Lease (
+    LeaseID INT PRIMARY KEY,
+    ApartmentID INT,
+    TenantID INT,
+    StartDate DATE,
+    EndDate DATE,
+    MonthlyRent DECIMAL(10, 2),
+    SecurityDeposit DECIMAL(10, 2),
+    FOREIGN KEY (ApartmentID) REFERENCES Apartment(ApartmentID),
+    FOREIGN KEY (TenantID) REFERENCES Tenant(TenantID)
+);
+
+-- Create junction table between ChargeableAmenity and Lease
+
+CREATE TABLE ChargeableAmenityLease (
+    LeaseID INT,
+    ChargeableAmenityID INT,
+    PRIMARY KEY (LeaseID, ChargeableAmenityID),
+    FOREIGN KEY (LeaseID) REFERENCES Lease(LeaseID),
+    FOREIGN KEY (ChargeableAmenityID) REFERENCES ChargeableAmenity(ChargeableAmenityID)
+);
+
+-- Create Payment Table
+
+CREATE TABLE Payment (
+    PaymentID INT PRIMARY KEY,
+    TenantID INT,
+    LeaseID INT,
+    PaymentDate DATE,
+    Amount DECIMAL(10, 2),
+    PaymentMethod VARCHAR(50),
+    FOREIGN KEY (TenantID) REFERENCES Tenant(TenantID),
+    FOREIGN KEY (LeaseID) REFERENCES Lease(LeaseID)
+);
+
+-- Create ProspectiveTenant Table
+
+CREATE TABLE ProspectiveTenant (
+    ProspectiveTenantID INT PRIMARY KEY,
+    PersonID INT,
+    FOREIGN KEY (PersonID) REFERENCES Person(PersonID)
+);
+
+-- Create junction table between ProspectiveTenant and Apartment
+
+CREATE TABLE Visit (
+    ApartmentID INT,
+    ProspectiveTenantID INT,
+    VisitDate DATE,
+    PRIMARY KEY (ApartmentID, ProspectiveTenantID, VisitDate),
+    FOREIGN KEY (ApartmentID) REFERENCES Apartment(ApartmentID),
+    FOREIGN KEY (ProspectiveTenantID) REFERENCES ProspectiveTenant(ProspectiveTenantID)
+);
+
+-- Create Dependant Table
+
+CREATE TABLE Dependant (
+    DependantID INT PRIMARY KEY,
+    Name VARCHAR(50),
+    TenantID INT,
+    FOREIGN KEY (TenantID) REFERENCES Tenant(TenantID)
+);
+
+-- Create Pet Table
+
+CREATE TABLE Pet (
+    PetID INT PRIMARY KEY,
+    Name VARCHAR(255),
+    Type VARCHAR(50),
+    TenantID INT
+);

@@ -1,0 +1,446 @@
+INSERT ALL
+INTO person (PERSONID, FIRSTNAME, LASTNAME, PHONENUMBER, EMAIL, DATEOFBIRTH) VALUES (1, 'Alice', 'Johnson', '555-111-1111', 'alicejohnson@gmail.com', TO_DATE('1993-05-15', 'YYYY-MM-DD'))
+INTO person (PERSONID, FIRSTNAME, LASTNAME, PHONENUMBER, EMAIL, DATEOFBIRTH) VALUES (2, 'Bob', 'Smith', '555-222-2222', 'bobsmith@gmail.com', TO_DATE('1995-09-03', 'YYYY-MM-DD'))
+INTO person (PERSONID, FIRSTNAME, LASTNAME, PHONENUMBER, EMAIL, DATEOFBIRTH) VALUES (3, 'Charlie', 'Williams', '555-333-3333', 'charliewilliams@gmail.com', TO_DATE('1991-07-20', 'YYYY-MM-DD'))
+INTO person (PERSONID, FIRSTNAME, LASTNAME, PHONENUMBER, EMAIL, DATEOFBIRTH) VALUES (4, 'David', 'Brown', '555-444-4444', 'davidbrown@gmail.com', TO_DATE('1990-03-12', 'YYYY-MM-DD'))
+INTO person (PERSONID, FIRSTNAME, LASTNAME, PHONENUMBER, EMAIL, DATEOFBIRTH) VALUES (5, 'Ella', 'Davis', '555-555-5555', 'elladavis@gmail.com', TO_DATE('1992-11-28', 'YYYY-MM-DD'))
+INTO person (PERSONID, FIRSTNAME, LASTNAME, PHONENUMBER, EMAIL, DATEOFBIRTH) VALUES (6, 'Frank', 'Miller', '555-666-6666', 'frankmiller@gmail.com', TO_DATE('1993-08-05', 'YYYY-MM-DD'))
+INTO person (PERSONID, FIRSTNAME, LASTNAME, PHONENUMBER, EMAIL, DATEOFBIRTH) VALUES (7, 'Grace', 'Wilson', '555-777-7777', 'gracewilson@gmail.com', TO_DATE('1994-04-09', 'YYYY-MM-DD'))
+INTO person (PERSONID, FIRSTNAME, LASTNAME, PHONENUMBER, EMAIL, DATEOFBIRTH) VALUES (8, 'Henry', 'Anderson', '555-888-8888', 'henryanderson@gmail.com', TO_DATE('1991-06-24', 'YYYY-MM-DD'))
+INTO person (PERSONID, FIRSTNAME, LASTNAME, PHONENUMBER, EMAIL, DATEOFBIRTH) VALUES (9, 'Ivy', 'Martinez', '555-999-9999', 'ivymartinez@gmail.com', TO_DATE('1992-10-17', 'YYYY-MM-DD'))
+INTO person (PERSONID, FIRSTNAME, LASTNAME, PHONENUMBER, EMAIL, DATEOFBIRTH) VALUES (10, 'Jack', 'Taylor', '555-101-0101', 'jacktaylor@gmail.com', TO_DATE('1990-12-30', 'YYYY-MM-DD'))
+INTO person (PERSONID, FIRSTNAME, LASTNAME, PHONENUMBER, EMAIL, DATEOFBIRTH) VALUES (11, 'Nicholas', 'Carnevale', '908-917-0553', 'nickcarnevale2@gmail.com', TO_DATE('2003-04-28', 'YYYY-MM-DD'))
+SELECT 1 FROM DUAL;
+
+INSERT ALL
+INTO property (PROPERTYID, STREETADDRESS, TOWN, STATE, ZIPCODE, TOTALUNITS) VALUES (1, '227 East 5th St', 'Bethlehem', 'PA', '18015', 3)
+INTO property (PROPERTYID, STREETADDRESS, TOWN, STATE, ZIPCODE, TOTALUNITS) VALUES (2, '229 East 5th St', 'Bethlehem', 'PA', '18015', 2)
+INTO property (PROPERTYID, STREETADDRESS, TOWN, STATE, ZIPCODE, TOTALUNITS) VALUES (3, '217 East 5th St', 'Bethlehem', 'PA', '18015', 1)
+INTO property (PROPERTYID, STREETADDRESS, TOWN, STATE, ZIPCODE, TOTALUNITS) VALUES (4, '311 East 5th St', 'Bethlehem', 'PA', '18015', 1)
+INTO property (PROPERTYID, STREETADDRESS, TOWN, STATE, ZIPCODE, TOTALUNITS) VALUES (5, '524 East 5th St', 'Bethlehem', 'PA', '18015', 1)
+INTO property (PROPERTYID, STREETADDRESS, TOWN, STATE, ZIPCODE, TOTALUNITS) VALUES (6, '208 East 4th St', 'Bethlehem', 'PA', '18015', 4)
+INTO property (PROPERTYID, STREETADDRESS, TOWN, STATE, ZIPCODE, TOTALUNITS) VALUES (7, '506 Thomas St', 'Bethlehem', 'PA', '18015', 4)
+INTO property (PROPERTYID, STREETADDRESS, TOWN, STATE, ZIPCODE, TOTALUNITS) VALUES (8, '418 Thomas St', 'Bethlehem', 'PA', '18015', 1)
+INTO property (PROPERTYID, STREETADDRESS, TOWN, STATE, ZIPCODE, TOTALUNITS) VALUES (9, '564 Hillside rd', 'Bethlehem', 'PA', '18015', 3)
+SELECT 1 FROM DUAL;
+
+INSERT ALL
+INTO apartment (APARTMENTID, PROPERTYID, APARTMENTNUMBER, BEDROOMS, BATHROOMS, APARTMENTSIZE, MONTHLYRENT) VALUES (1, 1, 101, 3, 1.5, 1000, 1200.00)
+INTO apartment (APARTMENTID, PROPERTYID, APARTMENTNUMBER, BEDROOMS, BATHROOMS, APARTMENTSIZE, MONTHLYRENT) VALUES (2, 1, 201, 4, 2.0, 1500, 1200.00)
+INTO apartment (APARTMENTID, PROPERTYID, APARTMENTNUMBER, BEDROOMS, BATHROOMS, APARTMENTSIZE, MONTHLYRENT) VALUES (3, 1, 301, 1, 1.0, 800, 900.00)
+INTO apartment (APARTMENTID, PROPERTYID, APARTMENTNUMBER, BEDROOMS, BATHROOMS, APARTMENTSIZE, MONTHLYRENT) VALUES (4, 2, 101, 2, 1.5, 1200, 1300.00)
+INTO apartment (APARTMENTID, PROPERTYID, APARTMENTNUMBER, BEDROOMS, BATHROOMS, APARTMENTSIZE, MONTHLYRENT) VALUES (5, 2, 201, 1, 1.0, 700, 800.00)
+INTO apartment (APARTMENTID, PROPERTYID, APARTMENTNUMBER, BEDROOMS, BATHROOMS, APARTMENTSIZE, MONTHLYRENT) VALUES (6, 3, 101, 3, 2.0, 1600, 1700.00)
+INTO apartment (APARTMENTID, PROPERTYID, APARTMENTNUMBER, BEDROOMS, BATHROOMS, APARTMENTSIZE, MONTHLYRENT) VALUES (7, 4, 101, 2, 1.5, 1300, 1400.00)
+INTO apartment (APARTMENTID, PROPERTYID, APARTMENTNUMBER, BEDROOMS, BATHROOMS, APARTMENTSIZE, MONTHLYRENT) VALUES (8, 5, 101, 1, 1.0, 900, 1000.00)
+INTO apartment (APARTMENTID, PROPERTYID, APARTMENTNUMBER, BEDROOMS, BATHROOMS, APARTMENTSIZE, MONTHLYRENT) VALUES (9, 6, 101, 1, 2.0, 1500, 1600.00)
+INTO apartment (APARTMENTID, PROPERTYID, APARTMENTNUMBER, BEDROOMS, BATHROOMS, APARTMENTSIZE, MONTHLYRENT) VALUES (10, 6, 201, 1, 1.5, 1300, 1400.00)
+INTO apartment (APARTMENTID, PROPERTYID, APARTMENTNUMBER, BEDROOMS, BATHROOMS, APARTMENTSIZE, MONTHLYRENT) VALUES (11, 6, 301, 5, 2.0, 1600, 2000.00)
+INTO apartment (APARTMENTID, PROPERTYID, APARTMENTNUMBER, BEDROOMS, BATHROOMS, APARTMENTSIZE, MONTHLYRENT) VALUES (12, 6, 302, 1, 1.0, 800, 900.00)
+INTO apartment (APARTMENTID, PROPERTYID, APARTMENTNUMBER, BEDROOMS, BATHROOMS, APARTMENTSIZE, MONTHLYRENT) VALUES (13, 7, 101, 2, 1.5, 1200, 1300.00)
+INTO apartment (APARTMENTID, PROPERTYID, APARTMENTNUMBER, BEDROOMS, BATHROOMS, APARTMENTSIZE, MONTHLYRENT) VALUES (14, 7, 201, 1, 1.0, 700, 800.00)
+INTO apartment (APARTMENTID, PROPERTYID, APARTMENTNUMBER, BEDROOMS, BATHROOMS, APARTMENTSIZE, MONTHLYRENT) VALUES (15, 7, 301, 3, 2.0, 1600, 1700.00)
+INTO apartment (APARTMENTID, PROPERTYID, APARTMENTNUMBER, BEDROOMS, BATHROOMS, APARTMENTSIZE, MONTHLYRENT) VALUES (16, 7, 302, 2, 1.5, 1300, 1400.00)
+INTO apartment (APARTMENTID, PROPERTYID, APARTMENTNUMBER, BEDROOMS, BATHROOMS, APARTMENTSIZE, MONTHLYRENT) VALUES (17, 8, 101, 1, 1.0, 900, 1000.00)
+INTO apartment (APARTMENTID, PROPERTYID, APARTMENTNUMBER, BEDROOMS, BATHROOMS, APARTMENTSIZE, MONTHLYRENT) VALUES (18, 9, 101, 3, 2.0, 1500, 1600.00)
+INTO apartment (APARTMENTID, PROPERTYID, APARTMENTNUMBER, BEDROOMS, BATHROOMS, APARTMENTSIZE, MONTHLYRENT) VALUES (19, 9, 201, 2, 1.5, 1300, 1400.00)
+INTO apartment (APARTMENTID, PROPERTYID, APARTMENTNUMBER, BEDROOMS, BATHROOMS, APARTMENTSIZE, MONTHLYRENT) VALUES (20, 9, 301, 1, 1.0, 900, 1000.00)
+SELECT 1 FROM DUAL;
+
+Insert all
+INTO ChargeableAmenity (ChargeableAmenityID, Name, Description, MonthlyCost) VALUES (1, 'Glow-in-the-Dark Ceiling Stars', 'Decorate your bedroom with glow-in-the-dark stars on the ceiling.', 10.00)
+INTO ChargeableAmenity (ChargeableAmenityID, Name, Description, MonthlyCost) VALUES (2, 'Indoor Cloud Machine', 'Create an indoor cloud atmosphere with this unique machine.', 400.00)
+INTO ChargeableAmenity (ChargeableAmenityID, Name, Description, MonthlyCost) VALUES (3, 'Underwater Sound System', 'Listen to your favorite music underwater with this aquatic sound system.', 100.00)
+INTO ChargeableAmenity (ChargeableAmenityID, Name, Description, MonthlyCost) VALUES (4, 'Personal Holographic Butler', 'Experience the future with your personal holographic butler service.', 5000.00)
+INTO ChargeableAmenity (ChargeableAmenityID, Name, Description, MonthlyCost) VALUES (5, 'Aromatherapy Oxygen Bar', 'Enjoy scented oxygen at the Aromatherapy Oxygen Bar in your apartment.', 800.00)
+INTO ChargeableAmenity (ChargeableAmenityID, Name, Description, MonthlyCost) VALUES (6, 'Virtual Reality Meditation Room', 'Relax and meditate in a virtual reality meditation room.', 80.00)
+INTO ChargeableAmenity (ChargeableAmenityID, Name, Description, MonthlyCost) VALUES (7, 'Interactive Plant Wall', 'Experience an interactive wall of living plants in your living room.', 20.00)
+INTO ChargeableAmenity (ChargeableAmenityID, Name, Description, MonthlyCost) VALUES (8, 'Time-Traveling Hot Tub', 'Soak in a hot tub that simulates time-traveling adventures.', 10000.00)
+INTO ChargeableAmenity (ChargeableAmenityID, Name, Description, MonthlyCost) VALUES (9, 'Auto-Parking Underground Garage', 'Installed in the street in front of hosue, just drive up to and the system will take care of parking.', 8000.00)
+SELECT 1 FROM DUAL;
+
+INSERT ALL
+INTO PrivateAmenity (PRIVATEAMENITYID, NAME, DESCRIPTION) VALUES (1, 'Stove', 'A standard stove for cooking and preparing meals.')   
+INTO PrivateAmenity (PRIVATEAMENITYID, NAME, DESCRIPTION) VALUES (2, 'Microwave', 'A microwave oven for quick heating and cooking.')
+INTO PrivateAmenity (PRIVATEAMENITYID, NAME, DESCRIPTION) VALUES (3, 'Refrigerator', 'A refrigerator to store groceries and keep items cool.')
+INTO PrivateAmenity (PRIVATEAMENITYID, NAME, DESCRIPTION) VALUES (4, 'Dishwasher', 'A dishwasher for easy cleaning of dishes and utensils.')
+INTO PrivateAmenity (PRIVATEAMENITYID, NAME, DESCRIPTION) VALUES (5, 'Washer and Dryer', 'In-unit washer and dryer for laundry convenience.')
+INTO PrivateAmenity (PRIVATEAMENITYID, NAME, DESCRIPTION) VALUES (6, 'Air Conditioning', 'Climate control with air conditioning for comfort.')
+INTO PrivateAmenity (PRIVATEAMENITYID, NAME, DESCRIPTION) VALUES (7, 'Heating System', 'Heating system to keep your apartment warm.')
+INTO PrivateAmenity (PRIVATEAMENITYID, NAME, DESCRIPTION) VALUES (8, 'High-Speed Internet', 'Access to high-speed internet for work and leisure.')
+SELECT 1 FROM DUAL;
+
+INSERT ALL
+INTO CommonAmenity (COMMONAMENITYID, NAME, DESCRIPTION) VALUES (1, 'Fitness Center', 'Access to a fully-equipped fitness center for your daily workouts.')
+INTO CommonAmenity (COMMONAMENITYID, NAME, DESCRIPTION) VALUES (2, 'Rooftop Garden', 'Enjoy a peaceful rooftop garden with scenic views and greenery.')
+INTO CommonAmenity (COMMONAMENITYID, NAME, DESCRIPTION) VALUES (3, 'Community Lounge', 'Relax in a community lounge with comfy seating and social areas.')
+INTO CommonAmenity (COMMONAMENITYID, NAME, DESCRIPTION) VALUES (4, 'Swimming Pool', 'Take a dip in the on-site swimming pool during the summer.')
+INTO CommonAmenity (COMMONAMENITYID, NAME, DESCRIPTION) VALUES (5, 'Dow-Jones Center', 'Utilize the business center for work-related tasks and meetings.')
+INTO CommonAmenity (COMMONAMENITYID, NAME, DESCRIPTION) VALUES (6, 'Outdoor BBQ Area', 'Host barbecues with friends in the outdoor BBQ area.')
+INTO CommonAmenity (COMMONAMENITYID, NAME, DESCRIPTION) VALUES (7, 'Walking Trails', 'Explore nearby walking trails for a breath of fresh air and exercise.')
+INTO CommonAmenity (COMMONAMENITYID, NAME, DESCRIPTION) VALUES (8, 'Pet-Friendly Park', 'A designated park for your furry friends to play and socialize.')
+SELECT 1 FROM DUAL;
+
+INSERT ALL
+INTO Tenant (TENANTID, PERSONID, LEASEID) VALUES (1, 11, NULL)
+INTO Tenant (TENANTID, PERSONID, LEASEID) VALUES (2, 12, NULL)
+INTO Tenant (TENANTID, PERSONID, LEASEID) VALUES (3, 13, NULL)
+INTO Tenant (TENANTID, PERSONID, LEASEID) VALUES (4, 14, NULL)
+INTO Tenant (TENANTID, PERSONID, LEASEID) VALUES (5, 15, NULL)
+INTO Tenant (TENANTID, PERSONID, LEASEID) VALUES (6, 16, NULL)
+INTO Tenant (TENANTID, PERSONID, LEASEID) VALUES (7, 17, NULL)
+INTO Tenant (TENANTID, PERSONID, LEASEID) VALUES (8, 18, NULL)
+INTO Tenant (TENANTID, PERSONID, LEASEID) VALUES (9, 19, NULL)
+INTO Tenant (TENANTID, PERSONID, LEASEID) VALUES (10, 20, NULL)
+INTO Tenant (TENANTID, PERSONID, LEASEID) VALUES (11, 21, NULL)
+INTO Tenant (TENANTID, PERSONID, LEASEID) VALUES (12, 22, NULL)
+INTO Tenant (TENANTID, PERSONID, LEASEID) VALUES (13, 23, NULL)
+INTO Tenant (TENANTID, PERSONID, LEASEID) VALUES (14, 24, NULL)
+SELECT 1 FROM DUAL;
+
+UPDATE Tenant
+SET LEASEID = 1
+WHERE TENANTID = 1;
+
+INSERT ALL
+-- Apartment 1
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (1,1)
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (1,2)
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (1,9)
+-- Apartment 2
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (2,1)
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (2,3)
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (2,7)
+-- Apartment 3
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (3, 1)
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (3, 4)
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (3, 6)
+-- Apartment 4
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (4, 2)
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (4, 3)
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (4, 5)
+-- Apartment 5
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (5, 1)
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (5, 4)
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (5, 7)
+-- Apartment 6
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (6, 1)
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (6, 2)
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (6, 8)
+-- Apartment 7
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (7, 3)
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (7, 5)
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (7, 7)
+-- Apartment 8
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (8, 4)
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (8, 6)
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (8, 9)
+-- Apartment 9
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (9, 2)
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (9, 4)
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (9, 8)
+-- Apartment 10
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (10, 1)
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (10, 3)
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (10, 5)
+-- Apartment 11
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (11, 2)
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (11, 4)
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (11, 7)
+-- Apartment 12
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (12, 3)
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (12, 6)
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (12, 9)
+-- Apartment 13
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (13, 1)
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (13, 3)
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (13, 5)
+-- Apartment 14
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (14, 2)
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (14, 4)
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (14, 8)
+-- Apartment 15
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (15, 1)
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (15, 2)
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (15, 6)
+-- Apartment 16
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (16, 1)
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (16, 4)
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (16, 7)
+-- Apartment 17
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (17, 3)
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (17, 5)
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (17, 9)
+-- Apartment 18
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (18, 2)
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (18, 6)
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (18, 8)
+-- Apartment 19
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (19, 1)
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (19, 2)
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (19, 9)
+-- Apartment 20
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (20, 4)
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (20, 5)
+INTO ChargeableAmenityApartment (ApartmentID, ChargeableAmenityID) VALUES (20, 9)
+SELECT 1 FROM DUAL;
+
+INSERT ALL
+-- Apartment 1
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (1, 1)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (1, 2)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (1, 3)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (1, 4)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (1, 5)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (1, 6)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (1, 7)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (1, 8)
+-- Apartment 2
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (2, 1)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (2, 2)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (2, 3)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (2, 4)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (2, 5)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (2, 6)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (2, 7)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (2, 8)
+-- Apartment 3
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (3, 1)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (3, 2)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (3, 3)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (3, 4)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (3, 5)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (3, 6)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (3, 7)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (3, 8)
+-- Apartment 4
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (4, 1)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (4, 2)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (4, 3)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (4, 4)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (4, 5)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (4, 6)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (4, 7)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (4, 8)
+-- Apartment 5
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (5, 1)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (5, 2)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (5, 3)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (5, 4)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (5, 5)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (5, 6)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (5, 7)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (5, 8)
+-- Apartment 6
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (6, 1)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (6, 2)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (6, 3)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (6, 4)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (6, 5)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (6, 6)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (6, 7)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (6, 8)
+-- Apartment 7
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (7, 1)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (7, 2)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (7, 3)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (7, 4)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (7, 5)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (7, 6)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (7, 7)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (7, 8)
+-- Apartment 8
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (8, 1)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (8, 2)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (8, 3)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (8, 4)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (8, 5)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (8, 6)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (8, 7)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (8, 8)
+-- Apartment 9
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (9, 1)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (9, 2)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (9, 3)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (9, 4)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (9, 5)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (9, 6)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (9, 7)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (9, 8)
+-- Apartment 10
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (10, 1)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (10, 2)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (10, 3)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (10, 4)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (10, 5)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (10, 6)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (10, 7)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (10, 8)
+-- Apartment 11
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (11, 1)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (11, 2)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (11, 3)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (11, 4)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (11, 5)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (11, 6)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (11, 7)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (11, 8)
+-- Apartment 12
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (12, 1)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (12, 2)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (12, 3)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (12, 4)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (12, 5)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (12, 6)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (12, 7)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (12, 8)
+-- Apartment 13
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (13, 1)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (13, 2)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (13, 3)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (13, 4)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (13, 5)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (13, 6)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (13, 7)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (13, 8)
+-- Apartment 14
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (14, 1)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (14, 2)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (14, 3)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (14, 4)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (14, 5)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (14, 6)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (14, 7)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (14, 8)
+-- Apartment 15
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (15, 1)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (15, 2)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (15, 3)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (15, 4)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (15, 5)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (15, 6)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (15, 7)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (15, 8)
+-- Apartment 16
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (16, 1)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (16, 2)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (16, 3)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (16, 4)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (16, 5)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (16, 6)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (16, 7)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (16, 8)
+-- Apartment 17
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (17, 1)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (17, 2)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (17, 3)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (17, 4)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (17, 5)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (17, 6)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (17, 7)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (17, 8)
+-- Apartment 18
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (18, 1)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (18, 2)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (18, 3)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (18, 4)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (18, 5)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (18, 6)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (18, 7)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (18, 8)
+-- Apartment 19
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (19, 1)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (19, 2)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (19, 3)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (19, 4)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (19, 5)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (19, 6)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (19, 7)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (19, 8)
+-- Apartment 20
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (20, 1)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (20, 2)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (20, 3)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (20, 4)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (20, 5)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (20, 6)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (20, 7)
+INTO PrivateAmenityApartment (ApartmentID, PrivateAmenityID) VALUES (20, 8)
+SELECT 1 FROM DUAL;
+
+INSERT ALL
+INTO ProspectiveTenant (PROSPECTIVETENANTID, PERSONID) VALUES (1, 1)
+INTO ProspectiveTenant (PROSPECTIVETENANTID, PERSONID) VALUES (2, 2)
+INTO ProspectiveTenant (PROSPECTIVETENANTID, PERSONID) VALUES (3, 3)
+SELECT 1 FROM DUAL;
+
+INSERT ALL 
+INTO Visit (APARTMENTID, PROSPECTIVETENANTID, VISITDATE) VALUES  (1, 1, TO_DATE('2023-09-15', 'YYYY-MM-DD'))
+INTO Visit (APARTMENTID, PROSPECTIVETENANTID, VISITDATE) VALUES  (2, 2, TO_DATE('2023-09-20', 'YYYY-MM-DD'))
+INTO Visit (APARTMENTID, PROSPECTIVETENANTID, VISITDATE) VALUES  (3, 3, TO_DATE('2023-09-25', 'YYYY-MM-DD'))
+INTO Visit (APARTMENTID, PROSPECTIVETENANTID, VISITDATE) VALUES  (4, 1, TO_DATE('2023-10-01', 'YYYY-MM-DD'))
+select 1 from dual;
+
+INSERT ALL 
+INTO Pet (PETID, NAME, TYPE, TENANTID) VALUES (1, 'Timmy', 'Dog', 1)
+INTO Pet (PETID, NAME, TYPE, TENANTID) VALUES (2, 'Nelli', 'Dog', 13)
+select 1 from dual;
+
+INSERT ALL
+INTO CommonAmenityProperty (PROPERTYID, COMMONAMENITYID) VALUES (1, 4)
+INTO CommonAmenityProperty (PROPERTYID, COMMONAMENITYID) VALUES (1, 5)
+INTO CommonAmenityProperty (PROPERTYID, COMMONAMENITYID) VALUES (1, 6)
+INTO CommonAmenityProperty (PROPERTYID, COMMONAMENITYID) VALUES (2, 4)
+INTO CommonAmenityProperty (PROPERTYID, COMMONAMENITYID) VALUES (3, 3)
+INTO CommonAmenityProperty (PROPERTYID, COMMONAMENITYID) VALUES (2, 6)
+INTO CommonAmenityProperty (PROPERTYID, COMMONAMENITYID) VALUES (3, 5)
+INTO CommonAmenityProperty (PROPERTYID, COMMONAMENITYID) VALUES (3, 6)
+INTO CommonAmenityProperty (PROPERTYID, COMMONAMENITYID) VALUES (4, 7)
+INTO CommonAmenityProperty (PROPERTYID, COMMONAMENITYID) VALUES (4, 8)
+INTO CommonAmenityProperty (PROPERTYID, COMMONAMENITYID) VALUES (5, 4)
+INTO CommonAmenityProperty (PROPERTYID, COMMONAMENITYID) VALUES (5, 5)
+INTO CommonAmenityProperty (PROPERTYID, COMMONAMENITYID) VALUES (6, 6)
+INTO CommonAmenityProperty (PROPERTYID, COMMONAMENITYID) VALUES (6, 4)
+INTO CommonAmenityProperty (PROPERTYID, COMMONAMENITYID) VALUES (7, 3)
+INTO CommonAmenityProperty (PROPERTYID, COMMONAMENITYID) VALUES (7, 4)
+INTO CommonAmenityProperty (PROPERTYID, COMMONAMENITYID) VALUES (8, 5)
+INTO CommonAmenityProperty (PROPERTYID, COMMONAMENITYID) VALUES (8, 6)
+INTO CommonAmenityProperty (PROPERTYID, COMMONAMENITYID) VALUES (9, 7)
+INTO CommonAmenityProperty (PROPERTYID, COMMONAMENITYID) VALUES (9, 8)
+SELECT 1 FROM DUAL;
+
+
+INSERT INTO Lease (LEASEID, APARTMENTID, TENANTID, STARTDATE, ENDDATE, MONTHLYRENT, SECURITYDEPOSIT) VALUES (1, 1, 1, TO_DATE('2023-09-01', 'YYYY-MM-DD'), TO_DATE('2024-08-31', 'YYYY-MM-DD'), 1200.00, 1500.00);
+
+-- Payment 1 (September)
+INSERT INTO Payment (PAYMENTID, TENANTID, LEASEID, PAYMENTDATE, AMOUNT, PAYMENTMETHOD)
+VALUES (1, 1, 1, TO_DATE('2023-09-15', 'YYYY-MM-DD'), 1200.00, 'Credit Card');
+
+-- Payment 2 (October)
+INSERT INTO Payment (PAYMENTID, TENANTID, LEASEID, PAYMENTDATE, AMOUNT, PAYMENTMETHOD)
+VALUES (2, 1, 1, TO_DATE('2023-10-15', 'YYYY-MM-DD'), 1200.00, 'Credit Card');
+
+-- Dependant 1
+INSERT INTO Dependant (DEPENDANTID, PERSONID, TENANTID)
+VALUES (1, 4, 1); -- Adjust the PERSONID and TENANTID as needed
+
+-- Dependant 2
+INSERT INTO Dependant (DEPENDANTID, PERSONID, TENANTID)
+VALUES (2, 5, 1); -- Adjust the PERSONID and TENANTID as needed
+
+-- Dependant 3
+INSERT INTO Dependant (DEPENDANTID, PERSONID, TENANTID)
+VALUES (3, 6, 1);
+
+INSERT INTO Lease (LEASEID, APARTMENTID, TENANTID, STARTDATE, ENDDATE, MONTHLYRENT, SECURITYDEPOSIT) VALUES (2, 4, 4, TO_DATE('2023-09-01', 'YYYY-MM-DD'), TO_DATE('2024-08-31', 'YYYY-MM-DD'), 1300.00, 1500.00);
+UPDATE Tenant
+SET LEASEID = 4
+WHERE TENANTID = 4;
+
+insert into ChargeableAmenityLease(LEASEID, ChargeableAmenityID) VALUES (2,5);
+insert into ChargeableAmenityLease(LEASEID, ChargeableAmenityID) VALUES (2,2);
+
+INSERT INTO Lease (LEASEID, APARTMENTID, TENANTID, STARTDATE, ENDDATE, MONTHLYRENT, SECURITYDEPOSIT) VALUES (2, 4, 4, TO_DATE('2023-09-01', 'YYYY-MM-DD'), TO_DATE('2024-08-31', 'YYYY-MM-DD'), 1300.00, 1500.00);
+UPDATE Tenant
+SET LEASEID = 4
+WHERE TENANTID = 4;
